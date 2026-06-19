@@ -1,0 +1,58 @@
+.page-banner {
+  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 60%, #3b82f6 100%);
+  padding: 44px 0 52px;
+  color: #fff;
+}
+
+.page-breadcrumb {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  opacity: 0.85;
+  margin-bottom: 12px;
+}
+
+.page-breadcrumb a {
+  color: rgba(255, 255, 255, 0.9);
+  transition: var(--transition);
+}
+
+.page-breadcrumb a:hover {
+  color: #fff;
+}
+
+.page-banner h1 {
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  max-width: 720px;
+}
+
+.page-lead {
+  padding: 32px 0 8px;
+}
+
+.page-lead-text {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--text-muted);
+}
+
+@media screen and (max-width: 768px) {
+  .page-banner {
+    padding: 36px 0 40px;
+  }
+
+  .page-banner h1 {
+    font-size: 28px;
+  }
+
+  .page-lead {
+    padding: 24px 0 4px;
+  }
+}

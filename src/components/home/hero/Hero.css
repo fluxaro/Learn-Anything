@@ -1,0 +1,266 @@
+.hero-shell {
+  padding: 12px 0 40px;
+  background: var(--bg);
+}
+
+.hero-card {
+  position: relative;
+  border-radius: 48px;
+  overflow: hidden;
+  min-height: 520px;
+  display: flex;
+  align-items: center;
+  isolation: isolate;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center right;
+  z-index: 0;
+}
+
+.hero-blob {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 58%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 64px 56px;
+  max-width: 540px;
+  color: #fff;
+}
+
+.hero-content h1 {
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -0.03em;
+  margin-bottom: 24px;
+  color: #fff;
+}
+
+.hero-content p {
+  font-size: 15px;
+  line-height: 1.75;
+  color: rgba(255, 255, 255, 0.88) !important;
+  margin-bottom: 36px;
+  max-width: 440px;
+}
+
+.hero-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 24px 14px 28px;
+  background: #fff;
+  color: var(--text-primary) !important;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 9999px;
+  transition: var(--transition);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.hero-cta:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.hero-cta-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--text-primary);
+  color: #fff;
+  font-size: 12px;
+}
+
+.hero-proof {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px 24px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius-lg);
+  max-width: 240px;
+}
+
+.hero-avatars {
+  display: flex;
+  align-items: center;
+}
+
+.hero-avatars img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  margin-left: -10px;
+}
+
+.hero-avatars img:first-child {
+  margin-left: 0;
+}
+
+.hero-avatars-more {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  font-size: 12px;
+  margin-left: -10px;
+  border: 2px solid rgba(255, 255, 255, 0.9);
+}
+
+.hero-proof-text strong {
+  display: block;
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.1;
+}
+
+.hero-proof-text span {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.4;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-card {
+    min-height: 560px;
+  }
+
+  .hero-content {
+    padding: 72px 64px;
+  }
+
+  .hero-content h1 {
+    font-size: 56px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .hero-shell {
+    padding: 16px 0 48px;
+  }
+
+  .hero-card {
+    min-height: 600px;
+    border-radius: 56px;
+  }
+
+  .hero-content {
+    padding: 80px 72px;
+    max-width: 580px;
+  }
+
+  .hero-content h1 {
+    font-size: 60px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+    max-width: 480px;
+  }
+
+  .hero-proof {
+    right: 48px;
+    bottom: 48px;
+    padding: 24px 28px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .hero-card {
+    min-height: 640px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .hero-card {
+    border-radius: 32px;
+    min-height: 480px;
+  }
+
+  .hero-blob {
+    width: 100%;
+    opacity: 0.92;
+  }
+
+  .hero-content {
+    padding: 48px 32px;
+    max-width: none;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .hero-content p {
+    max-width: none;
+  }
+
+  .hero-proof {
+    right: 24px;
+    bottom: 24px;
+    left: 24px;
+    max-width: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-shell {
+    padding: 8px 0 32px;
+  }
+
+  .hero-card {
+    border-radius: 24px;
+    min-height: 520px;
+    align-items: flex-end;
+  }
+
+  .hero-content {
+    padding: 32px 24px 140px;
+  }
+
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .hero-proof {
+    flex-direction: row;
+    align-items: center;
+    padding: 16px;
+  }
+
+  .hero-proof-text strong {
+    font-size: 22px;
+  }
+}

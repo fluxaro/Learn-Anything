@@ -1,0 +1,165 @@
+.coursesCard {
+  padding: 0;
+}
+
+.coursesCard.padding {
+  padding-bottom: 0;
+}
+
+.coursesCard.padding .grid2 {
+  margin-bottom: 0;
+}
+
+.coursesCard .items {
+  background-color: var(--surface-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.coursesCard .items:hover {
+  border-color: var(--accent);
+}
+
+.coursesCard .img {
+  width: 72px;
+  height: 72px;
+  border-radius: var(--radius-md);
+  background-color: var(--accent-light);
+  padding: 12px;
+}
+
+.coursesCard img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.coursesCard .text {
+  margin-left: 16px;
+  text-align: left;
+}
+
+.coursesCard .text h1 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.coursesCard .rate {
+  margin: 12px 0;
+  color: var(--accent);
+}
+
+.coursesCard .rate i {
+  font-size: 12px;
+  margin-right: 2px;
+}
+
+.coursesCard .details .dimg img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.coursesCard .details .box {
+  display: flex;
+  align-items: center;
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.coursesCard .details span {
+  color: var(--accent);
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.coursesCard .price {
+  margin: 20px 0;
+  background-color: var(--surface);
+  padding: 10px;
+  border-radius: var(--radius-sm);
+}
+
+.coursesCard h3 {
+  font-weight: 500;
+  color: var(--accent);
+  font-size: 14px;
+}
+
+.online {
+  text-align: center;
+}
+
+.online-embedded {
+  padding: 48px 0 0;
+}
+
+.online.padding {
+  padding-bottom: var(--section-y);
+}
+
+.online .box {
+  border: 1px solid var(--border);
+  background-color: var(--surface-raised);
+  border-radius: var(--radius-md);
+  padding: 24px 16px;
+  transition: var(--transition);
+}
+
+.online .img {
+  width: 64px;
+  height: 64px;
+  margin: auto;
+  position: relative;
+}
+
+.online img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.online h1 {
+  font-weight: 600;
+  font-size: 14px;
+  margin: 16px 0 8px;
+  line-height: 1.35;
+}
+
+.online span {
+  background-color: var(--accent-light);
+  padding: 4px 12px;
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--accent);
+  border-radius: var(--radius-sm);
+}
+
+.online .box .show {
+  opacity: 0;
+}
+
+.online .box:hover {
+  border-color: var(--accent);
+  cursor: pointer;
+}
+
+.online .box:hover .show {
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.online .box:hover h1 {
+  color: var(--accent);
+}
+
+.homeAbout {
+  background-color: var(--bg);
+}

@@ -1,0 +1,54 @@
+.testimonal .items {
+  padding: 28px;
+  transition: var(--transition);
+}
+
+.testimonal .img {
+  position: relative;
+}
+
+.testimonal img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonal i {
+  position: absolute;
+  bottom: 0;
+  left: 44px;
+  background-color: var(--accent);
+  color: #fff;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  font-size: 10px;
+}
+
+.testimonal .name {
+  margin: 16px 0 0 16px;
+}
+
+.testimonal .name h2 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.testimonal .name span {
+  color: var(--accent);
+  font-size: 12px;
+}
+
+.testimonal p {
+  margin-top: 16px;
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.65;
+  transition: var(--transition);
+}
+
+.testimonal .items:hover {
+  border-color: var(--accent);
+}

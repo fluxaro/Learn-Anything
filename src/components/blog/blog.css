@@ -1,0 +1,54 @@
+.blog .items {
+  overflow: hidden;
+}
+
+.blog img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.blog .text {
+  padding: 24px;
+}
+
+.blog h1 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.4;
+  margin: 16px 0 8px;
+  transition: var(--transition);
+}
+
+.blog h1:hover {
+  color: var(--accent);
+  cursor: pointer;
+}
+
+.blog span {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 11px;
+  color: var(--accent);
+}
+
+.blog span label {
+  margin-left: 6px;
+  color: var(--text-muted);
+  font-size: 11px;
+}
+
+.blog span:nth-last-child(1) label {
+  color: var(--accent);
+}
+
+.blog p {
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.blog .admin {
+  gap: 12px;
+  flex-wrap: wrap;
+}
